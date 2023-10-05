@@ -1,7 +1,8 @@
 import React from 'react'
 import './Navbar.css'
 import { MdTravelExplore } from "react-icons/md";
-
+import {AiFillCloseCircle} from 'react-icons/ai';
+import {TbGridDots} from 'react-icons/tb';
 
 const Navbar = () => {
   return (
@@ -16,7 +17,7 @@ const Navbar = () => {
             </div> 
 
             <div className='navBar'>
-                <ul className="navLists grid">
+                <ul className="navLists flex">
                     <li className="navItem">
                         <a href="#" className="navLink">Home</a>
                     </li>
@@ -45,7 +46,18 @@ const Navbar = () => {
                         <a href="#" className="navLink">Contacts</a>
                     </li>
 
+                    <button className='btn'>
+                        <a>BOOK NOW !</a> 
+                    </button>
                 </ul>
+            </div>
+
+            <div className="closeNavbar">
+                <AiFillCloseCircle className='icon'/>
+            </div>
+
+            <div className="toggleNavBar">
+                <TbGridDots className="icon"/>
             </div>
 
         </header>
